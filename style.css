@@ -17,13 +17,21 @@
     width: 30%;
     margin-bottom: 40px;
 }
-
+.hide-deskop {
+    display: none;
+}
+.hide-mobile {
+    display: block;
+}
 
 /* Tablet View */
 /* Jesli taki warunek sie wykona (działa w obie strony) */
 @media (max-width: 768px) {
     .col {
         width: 47%;
+    }
+    .hide-deskop {
+        display: block;
     }
 }
 
@@ -33,5 +41,8 @@
 @media (max-width: 500px) {
     .col {
         width: 100%;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
