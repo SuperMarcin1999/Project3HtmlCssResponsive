@@ -1,0 +1,26 @@
+/* Global View aka Deskop View */
+h1 {
+    color: limegreen;
+    /* Zmienna font=family jest cos ala dziedziczona przez wartosci nizej */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Tablet View */
+/* Jesli taki warunek sie wykona (działa w obie strony) */
+@media (max-width: 768px) {
+    h1 {
+        color: green;
+    }
+}
+
+
+/* Mobile View */
+/* Dla mobile mniej, np 400px, ale nie da sie bardziej chroma zwęższyć */
+@media (max-width: 500px) {
+    h1 {
+        color: black;
+        /* W tym przypadku nic poniżej niema więc tylko dla tego "widoku" będziemy mięć tą czcionkę */
+        /* font-family: 'Courier New', Courier, monospace; */
+    }
+}
