@@ -10,6 +10,8 @@ body {
 .header-container {
     background-color: #484848;
     margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
 }
 header {
     margin-left: auto;
@@ -44,6 +46,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
 }
 .col {
     background-color: #2DBE8E;
