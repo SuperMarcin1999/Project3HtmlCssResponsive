@@ -72,6 +72,9 @@ header {
 .mobile-wrapper {
     display: none;
 }
+.mobile-nav {
+    display: none;
+}
 
 /* Tablet View */
 /* Jesli taki warunek sie wykona (działa w obie strony) */
