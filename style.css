@@ -17,12 +17,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    padding: 30px 0px;
+    height: 100px;
     box-sizing: border-box;
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 }
 .my-btn {
     padding: 10px 30px;
@@ -65,11 +66,11 @@ header {
 .hide-deskop {
     display: none;
 }
-.hide-mobile {
-    display: block;
-}
 .col img {
     width: 100%;
+}
+.mobile-wrapper {
+    display: none;
 }
 
 /* Tablet View */
@@ -81,34 +82,35 @@ header {
     .hide-deskop {
         display: block;
     }
-    .container {
-        padding-top: 210px;
-    }
-    .my-btn {
-        width: 100%;
-        gap: 0px;
-        text-align: center;
-        border-radius: 0px;
-    }
-    header {
-        padding: 0px;
+    .hide-mobile {
         display: block;
-    }
-    .header-container p {
-        display: block;
-        text-align: center;
-        padding: 30px 0px;
     }
     .header-btns-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0px;
+        display: none;
     }
-    .header-btns-container :not(:first-child) {
-        border-top: 0px;
+    .mobile-wrapper {
+        display: block;
     }
+    .mobile-nav {
+        position: absolute;
+        margin-left: -60px; /* dla absolute, margin-right nie dziala :) */
+    }
+    header p {
+        padding-left: 20px;
+    }
+    .nav-btn {
+        display: block;
+        background-color: coral;
+        padding: 15px 25px;
+        text-align: center;
+    }
+    .burger-menu {
+        width: 40px;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+    
 }
-
 
 /* Mobile View */
 /* Dla mobile mniej, np 400px, ale nie da sie bardziej chroma zwęższyć */
