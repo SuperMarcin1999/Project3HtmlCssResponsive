@@ -81,6 +81,32 @@ header {
     .hide-deskop {
         display: block;
     }
+    .container {
+        padding-top: 210px;
+    }
+    .my-btn {
+        width: 100%;
+        gap: 0px;
+        text-align: center;
+        border-radius: 0px;
+    }
+    header {
+        padding: 0px;
+        display: block;
+    }
+    .header-container p {
+        display: block;
+        text-align: center;
+        padding: 30px 0px;
+    }
+    .header-btns-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .header-btns-container :not(:first-child) {
+        border-top: 0px;
+    }
 }
 
 
@@ -89,8 +115,5 @@ header {
 @media (max-width: 500px) {
     .col {
         width: 100%;
-    }
-    .hide-mobile {
-        display: none;
     }
 }
